@@ -13,6 +13,11 @@
 #include <winnetwk.h>
 
 #include <wincon.h>
+
+#ifdef COMPILER_MINGW
+#undef CY
+#endif
+
 #include <shlobj.h>
 
 #undef Ptr
